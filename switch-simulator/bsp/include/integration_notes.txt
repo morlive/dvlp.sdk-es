@@ -1,0 +1,20 @@
+/**
+* Integration Notes:
+*
+* HAL Integration:
+* - This BSP layer provides hardware abstraction for HAL components
+* - HAL port.h should use bsp_port_* functions for hardware operations
+* - HAL packet.h can use BSP resource allocation for buffer management
+*
+* SAI Compatibility:
+* - BSP provides foundation for SAI adapter implementation
+* - Port configurations map directly to SAI port attributes
+* - QoS structures align with SAI QoS model
+* - Statistics counters follow SAI counter naming conventions
+*
+* Python Bindings:
+* - Consider creating Python wrappers for BSP API
+* - Use ctypes or SWIG for automatic binding generation
+* - Expose port status and statistics for monitoring tools
+*/
+
